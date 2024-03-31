@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./dp-angular-app
+      dockerfile: ./Dockerfile
+    ports:
+      - "4200:4200"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./DiplomovaPraca
+      dockerfile: ./Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./json_files:/app/json_files
+    networks:
+      - app-network
+
+  genetic:
+    build:
+      context: ./Genetic
+      dockerfile: ./Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - genetic-images:/app/images
+      - genetic-results:/app/results
+    networks:
+      - app-network
+
+volumes:
+  genetic-images:
+  genetic-results:
+
+networks:
+  app-network:
+    driver: bridge

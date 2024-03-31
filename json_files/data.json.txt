@@ -1,0 +1,29 @@
+{
+  "userHistory": [
+    {
+      "sessionId": "session_id_value",
+      "request": [
+        {
+          "jobId": "job_id_value",
+          "prompt": "prompt_value",
+          "cesta1": "cesta_value1"
+        },
+        {
+          "jobId": "another_job_id_value",
+          "prompt": "another_prompt_value",
+          "cesta1": "cesta_value1"
+        }
+      ]
+    },
+    {
+      "sessionId": "another_session_id_value",
+      "request": [
+        {
+          "jobId": "yet_another_job_id_value",
+          "prompt": "yet_another_prompt_value",
+          "cesta1": "cesta_value1"
+        }
+      ]
+    }
+  ]
+}
