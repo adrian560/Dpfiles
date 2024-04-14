@@ -17,3 +17,6 @@
             - driver: nvidia
               device_ids: ['0']
               capabilities: [compute, utility]
+
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
