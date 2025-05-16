@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/dpDockerTest.iml" filepath="$PROJECT_DIR$/.idea/dpDockerTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RootRepo.iml" filepath="$PROJECT_DIR$/.idea/RootRepo.iml" />
     </modules>
   </component>
 </project>
